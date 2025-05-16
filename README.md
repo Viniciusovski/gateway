@@ -60,6 +60,16 @@ O Gateway abstrai a complexidade interna, expondo apenas uma interface unificada
 
   Monitoramento e logs são essenciais para detectar problemas
 
+  
+
+ A partir do momento que temos um **Gateway**, o ponto central para efetuar as chamadas para a aplicação, utilizaremos a porta `8082` 
+  
+ que foi definida para o Gateway — e incluiremos o nome do microsserviço `pedidos-ms`, seguido da URL definida no controlador.
+
+  http://localhost:8082/pedidos-ms/pedidos
+
+
+
 
 📚 Referências
 Spring Cloud Gateway Docs: https://spring.io/projects/spring-cloud-gateway
