@@ -46,18 +46,6 @@ O Gateway abstrai a complexidade interna, expondo apenas uma interface unificada
 
 ---
 
-
-## 🧪 Exemplo com Spring Cloud Gateway
-
-```yaml
-spring:
-  cloud:
-    gateway:
-      routes:
-        - id: product-service
-          uri: http://localhost:8081/
-          predicates:
-            - Path=/api/products/**
 ✅ Vantagens
   Reduz o acoplamento entre clientes e serviços
 
@@ -78,3 +66,14 @@ Spring Cloud Gateway Docs: https://spring.io/projects/spring-cloud-gateway
 
 AWS API Gateway: https://aws.amazon.com/api-gateway/
 
+## 🧪 Exemplo com Spring Cloud Gateway
+
+```yaml
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: product-service
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/api/products/**
